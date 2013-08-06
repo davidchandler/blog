@@ -2,7 +2,7 @@ Blog::Application.routes.draw do
 
  get "welcome/index"
 
- resources :posts, only: [:create, :show]
+ resources :posts
 
  root 'welcome#index'
  

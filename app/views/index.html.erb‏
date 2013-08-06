@@ -1,0 +1,10 @@
+<h3> Here are all the posts:</h3>
+<ul>
+<% @posts.each do |post| %>
+  <li><%= link_to post.title, post %>
+    <small>
+      <%= link_to '(edit)', edit_post_path(post) %>
+    </small>
+  </li>
+<% end %>
+</ul>
